@@ -1,5 +1,5 @@
 {
-  "name": "webflow-developer-starter-template",
+  "name": "cloudtech",
   "version": "1.0.0",
   "description": "Developer Starter Template for Webflow Projects using Webpack",
   "main": "index.js",
@@ -13,5 +13,8 @@
   "devDependencies": {
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
   }
 }

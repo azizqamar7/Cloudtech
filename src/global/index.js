@@ -4,6 +4,12 @@
 
 console.log('Hello from Global folder')
 
-import { functionName } from '../helpers/function-name'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { navbarSwitch } from '../helpers/navbar-switch'
 
-functionName()
+window.addEventListener('DOMContentLoaded', (event) => {
+  gsap.registerPlugin(ScrollTrigger)
+
+  navbarSwitch()
+})
