@@ -6,7 +6,7 @@ import gsap from 'gsap'
 
 export const navbarSwitch = () => {
   const navbarToggle = () => {
-    const navOverlay = document.querySelector('[nav-overlay]')
+    const navOverlay = document.querySelector('[navbar-overlay]')
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -21,6 +21,8 @@ export const navbarSwitch = () => {
         },
       },
     })
+
+    tl.set(navOverlay, { opacity: 0 })
   }
   navbarToggle()
 }
