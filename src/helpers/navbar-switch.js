@@ -14,13 +14,15 @@ export const navbarSwitch = () => {
         start: 'top -5%',
         // markers: true,
         onEnter: () => {
-          gsap.fromTo('[navbar-overlay]', { opacity: 0 }, { opacity: 1 })
+          gsap.fromTo(navOverlay, { opacity: 0 }, { opacity: 1 })
         },
         onLeaveBack: () => {
-          gsap.fromTo('[navbar-overlay]', { opacity: 1 }, { opacity: 0 })
+          gsap.fromTo(navOverlay, { opacity: 1 }, { opacity: 0 })
         },
       },
     })
+
+    tl.set(navOverlay, { opacity: 0 })
   }
   navbarToggle()
 }
