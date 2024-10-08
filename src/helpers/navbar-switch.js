@@ -21,8 +21,6 @@ export const navbarSwitch = () => {
         },
       },
     })
-
-    tl.set(navOverlay, { opacity: 0 })
   }
   navbarToggle()
 }
