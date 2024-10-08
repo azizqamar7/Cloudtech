@@ -12,7 +12,7 @@ export const navbarSwitch = () => {
       scrollTrigger: {
         trigger: 'body',
         start: 'top -5%',
-        markers: true,
+        // markers: true,
         onEnter: () => {
           gsap.fromTo('[navbar-overlay]', { opacity: 0 }, { opacity: 1 })
         },
