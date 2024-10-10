@@ -7,9 +7,12 @@ console.log('Hello from Global folder')
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { navbarSwitch } from '../helpers/navbar-switch'
+import { marqueeScrollIx } from '../helpers/marquee-scroll'
 
 window.addEventListener('DOMContentLoaded', (event) => {
   gsap.registerPlugin(ScrollTrigger)
 
   navbarSwitch()
+
+  marqueeScrollIx()
 })

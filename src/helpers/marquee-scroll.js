@@ -12,6 +12,14 @@ export const marqueeScrollIx = () => {
     ease: 'none',
     duration: 40,
   })
+
+  const aboutTl = gsap.timeline({ repeat: -1 })
+
+  aboutTl.to('[marquee-track-about]', {
+    x: '-50%',
+    ease: 'none',
+    duration: 40,
+  })
 }
 
 export const marqueeVerticalScroll = () => {

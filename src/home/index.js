@@ -13,7 +13,7 @@ import { sectionIntegrationSticky } from './section-integration-sticky'
 window.addEventListener('DOMContentLoaded', (event) => {
   gsap.registerPlugin(ScrollTrigger)
 
-  marqueeScrollIx()
+  // marqueeScrollIx()
 
   // Section Services
   sectionServiesTabs()
