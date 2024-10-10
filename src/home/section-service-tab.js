@@ -44,20 +44,20 @@ export const sectionServiesTabs = () => {
     }
 
     // Function to start the automatic tab switching
-    function startAutomaticSwitch() {
-      clearInterval(intervalId) // Clear any existing interval
-      intervalId = setInterval(() => {
-        currentTab = (currentTab + 1) % tabLinks.length
-        switchTab(currentTab)
-      }, 3000) // Switch tabs every 3 seconds
-    }
+    // function startAutomaticSwitch() {
+    //   clearInterval(intervalId) // Clear any existing interval
+    //   intervalId = setInterval(() => {
+    //     currentTab = (currentTab + 1) % tabLinks.length
+    //     switchTab(currentTab)
+    //   }, 3000) // Switch tabs every 3 seconds
+    // }
 
     // Add click event listeners to tab links
     tabLinks.forEach((link, index) => {
       link.addEventListener('click', () => {
         currentTab = index
         switchTab(currentTab)
-        startAutomaticSwitch() // Restart the automatic switching after user interaction
+        // startAutomaticSwitch() // Restart the automatic switching after user interaction
       })
     })
 
@@ -67,7 +67,7 @@ export const sectionServiesTabs = () => {
       start: 'top 80%', // Trigger when the top of .section-tab is 80% from the top of the viewport
       onEnter: () => {
         switchTab(currentTab) // Trigger the tab switch function
-        startAutomaticSwitch() // Start the automatic tab switching
+        // startAutomaticSwitch() // Start the automatic tab switching
       },
       // markers: true,
     })
